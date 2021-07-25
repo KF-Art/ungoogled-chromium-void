@@ -1,0 +1,37 @@
+# Template file for 'ungoogled-chromium-bin'
+
+_chromiumRevision=1.1
+
+pkgname=ungoogled-chromium-bin
+_ChromiumName="ungoogled-chromium"
+version=91.0.4472.164
+revision=1
+maintainer="Kevin Figueroa <kevinfigueroart@protonmail.com>"
+homepage="https://github.com/Eloston/ungoogled-chromium"
+license="BSD-3-Clause"
+short_desc="Ungoogled Chromium pre-built binary"
+archs="x86_64"
+create_wrksrc=yes
+nostrip=yes
+hostmakedepends="tar xz"
+make_dirs="/opt/${_ChromiumName} 755 root root"
+_baseUrl="https://github.com/mdedonno1337/ungoogled-chromium-binaries/releases/download"
+_filename="ungoogled-chromium_${version}-${_chromiumRevision}_linux.tar.xz"
+_chromiumUrl="${_baseUrl}/${version}-${_chromiumRevision}/${_filename}"
+distfiles="$_chromiumUrl"
+checksum=4419e6ac7cf50e5273634239a2ad48c127944fad5b23515c5beece2c1461974e
+
+do_install() {
+	vmkdir opt/${_ChromiumName}/
+	vmkdir usr/share/applications
+  mkdir -p ${DESTDIR}/extract
+  tar -xf ${XBPS_SRCDISTDIR}/${pkgname}-${version}/${_filename} -C ${DESTDIR}/extract
+	mv ${DESTDIR}/extract/ungoogled-chromium_${version}-${_chromiumRevision}_linux/* ${DESTDIR}/opt/${_ChromiumName}
+	vmkdir usr/bin
+	ln -rs ${DESTDIR}/opt/${_ChromiumName}/chrome-wrapper ${DESTDIR}/usr/bin/${_ChromiumName}
+  rm -rf ${DESTDIR}/extract
+}
+post_install() {
+	vcopy ${FILESDIR}/${_ChromiumName}.desktop usr/share/applications
+	vlicense ${FILESDIR}/LICENSE
+}
