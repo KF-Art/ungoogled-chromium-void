@@ -3,7 +3,7 @@ Void Linux repository for Ungoogled Chromium fork.
 
 <H1>How to install</H1>
 
-Please note that this process was only tested on x86_64-glibc, which is the main focus of this repository. Feel free to tell me if this works well on i86 and ARM (GlibC). I'll consider to add a Musl package also.
+Please note that this process was only tested on x86_64-glibc, which is the main focus of this repository. Feel free to tell me if this works well on i686 and ARM (GlibC). I'll consider to add a Musl package also.
 
  <H2>Building from template</H2>
 
