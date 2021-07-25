@@ -55,7 +55,7 @@ There is also an binary package to install directly to your system. I recommend 
 To install it, just do the following steps:
 
      mkdir ungoogled-chromium; cd ungoogled-chromium
-     curl -O https://github.com/KF-Art/ungoogled-chromium-void/releases/download/91.0.4472.164_1/ungoogled-chromium-bin-91.0.4472.164_1.x86_64.xbps
+     wget https://github.com/KF-Art/ungoogled-chromium-void/releases/download/91.0.4472.164_1/ungoogled-chromium-bin-91.0.4472.164_1.x86_64.xbps
      xbps-rindex -a *.xbps
      sudo xbps-install --repository=$PWD ungoogled-chromium-bin
 
