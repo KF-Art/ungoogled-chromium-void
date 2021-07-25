@@ -1,5 +1,11 @@
 # Ungoogled Chromium Void Linux
-Void Linux repository for Ungoogled Chromium fork.
+Chromium's ungoogled fork, ported to Void Linux. A lightweight approach to removing Google web service dependency that features tweaks to enhance privacy, control, and transparency.
+
+These packages and templates were made using these repositories or templates as guide:
+ - <a href="https://github.com/kjjjnob/brave-bin">Void Linux brave-bin</a>.
+ - <a href="https://github.com/not-void/nvoid/tree/master/srcpkgs/ungoogled-chromium-eloston">NVoid's Ungoogled Chromium Eloston</a>.
+ - <a href="https://github.com/mdedonno1337/ungoogled-chromium-binaries/tree/master/releases/linux_portable">Marco De Donno's Ungoogled Chromium portable tarball</a>.
+ - <a href="https://github.com/void-linux/void-packages/tree/master/srcpkgs/chromium">Void Linux's official Chromium template</a>.
 
 <H1>How to install</H1>
 
@@ -28,7 +34,7 @@ Clone the template to <code>void-packages</code> directory, copy the template, b
 
      git clone https://github.com/KF-Art/ungoogled-chromium-void/ && cd ungoogled-chromium-void
      cp -r ungoogled-chromium-bin ../srcpkgs/ && cd ..
-     ./xbps-src pkg ungoogled-chromium-bin # compile the package
+     ./xbps-src pkg ungoogled-chromium-bin # build the package
      xi ungoogled-chromium-bin # install the package
      
   <H3>Building from source code (Experimental and not tested)</H3>
@@ -37,6 +43,7 @@ This method is purely experimental, has not undergone sufficient testing, and do
 
      # Clone this repo, if not done yet.
      git clone https://github.com/KF-Art/ungoogled-chromium-void/ && cd ungoogled-chromium-void
+     
      cp -r ungoogled-chromium ../srcpkgs/ && cd ..
      ./xbps-src pkg ungoogled-chromium # compile the package.
      xi ungoogled-chromium # install the package.
