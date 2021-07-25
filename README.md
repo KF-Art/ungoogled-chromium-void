@@ -49,7 +49,7 @@ This method is purely experimental, has not undergone sufficient testing, and do
      xi ungoogled-chromium # install the package.
 
   
- <H2>[WIP] Installing pre-built XBPS binary (x86_64-glibc only)</H2>
+ <H2>Installing pre-built XBPS binary (x86_64-glibc only)</H2>
 There is also an binary package to install directly to your system. I recommend this if you don't want to go through the building process, but this may be outdated sometimes. I'll try to mantain this updated as is possible for me.
 
 To install it, just do the following steps:
