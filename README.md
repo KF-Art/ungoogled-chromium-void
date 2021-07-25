@@ -37,7 +37,7 @@ Clone the template to <code>void-packages</code> directory, copy the template, b
      ./xbps-src pkg ungoogled-chromium-bin # build the package
      xi ungoogled-chromium-bin # install the package
      
-  <H3>Building from source code (Experimental and not tested)</H3>
+  <H3>[WIP] Building from source code (Experimental and not tested)</H3>
 
 This method is purely experimental, has not undergone sufficient testing, and does NOT work at the moment. This section is reserved for testing and polishing the code until it is compiled correctly. Proceed with care.
 
