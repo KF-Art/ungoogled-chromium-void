@@ -13,7 +13,7 @@ Please note that this process was only tested on x86_64-glibc, which is the main
 
  <H2>Building from template</H2>
 
-First of all, we'll need <code>xtools</code> installed in order to use <code>properly</code> xbps-src:
+First of all, we'll need <code>xtools</code> installed in order to use <code>xbps-src</code> properly:
 
      sudo xbps-install xtools
 
