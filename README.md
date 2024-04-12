@@ -1,6 +1,6 @@
-# Unmaintained!
-This repository is unmaintained in favor of https://github.com/DAINRA/ungoogled-chromium-void. 
-Unlike this template, the package is built from the source code and provides a custom XBPS repository. You should use it.
+# DEPRECATED
+This repository is deprecated in favor of https://github.com/DAINRA/ungoogled-chromium-void. 
+Unlike this template, the package is built from the source code and provides a custom XBPS repository and it was able to follow up its subsequent updates. If you wish to use Ungoogled Chromium in Void, that's the best option.
 
 # Ungoogled Chromium Void Linux
 Chromium's ungoogled fork, ported to Void Linux. A lightweight approach to removing Google web service dependency that features tweaks to enhance privacy, control, and transparency.
